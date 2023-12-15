@@ -5,6 +5,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {navigationRef} from './NavigationService';
 import ReactQuiz from '../setofQuessions/Reactquiz';
+import Cau1 from '../setofQuessions/quizReact/cau1';
 export type RootStackParamList = {
   LoginScreen: undefined;
   Home: undefined;
@@ -18,6 +19,7 @@ export default function RootStack() {
         <Stack.Screen name="LoginScreen" component={LoginScreen} />
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="ReactQuiz" component={ReactQuiz} />
+        <Stack.Screen name="Cau1" component={Cau1} />
       </Stack.Navigator>
     </NavigationContainer>
   );
